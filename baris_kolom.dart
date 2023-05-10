@@ -6,31 +6,17 @@ class BarisKolom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Baris & Kolom"),
-        ),
-        body: Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Row(children: const [
-                Text(
-                  "Baris 1 Kolom 1",
-                  textAlign: TextAlign.left,
-                ),
-                Spacer(),
-                Text(
-                  "Baris 1 Kolom 2",
-                  textAlign: TextAlign.center,
-                ),
-                Spacer(),
-                Text(
-                  "Baris 1 Kolom 3",
-                  textAlign: TextAlign.right,
-                ),
-              ]),
-            ],
-          ),
-        ));
+      appBar: AppBar(
+        title: const Text("Baris & Kolom"),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: const [
+          Text("Baris 1, Kolom 1" "Baris 1, Kalom 2" "Baris 1, Kolom 3"),
+          Text("Baris 2, Kolom 1" "Baris 2, Kalom 2" "Baris 2, Kolom 3"),
+          Text("Baris 3, Kolom 1" "Baris 3, Kalom 2" "Baris 3, Kolom 3")
+        ],
+      ),
+    );
   }
 }
